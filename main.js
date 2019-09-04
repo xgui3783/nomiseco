@@ -64,6 +64,6 @@ module.exports = {
   BROTLI,
   GZIP,
 
-  setAlwaysOn = flag => alwaysOn = !!flag,
-  setAlwaysOff = flag => alwaysOff = !!flag
+  setAlwaysOn: flag => alwaysOn = !!flag,
+  setAlwaysOff: flag => alwaysOff = !!flag
 }
