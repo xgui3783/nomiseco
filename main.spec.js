@@ -23,6 +23,7 @@ describe('main.js', () => {
     it('When NODE_ENV is set to production, returns appropriate encoding', () => {
       process.env.NODE_ENV = 'production'
       expect(detEncoding(null)).to.equal(null)
+      expect(detEncoding(undefined)).to.equal(null)
       expect(detEncoding(gzip)).to.equal(GZIP)
       expect(detEncoding(gzipDeflate)).to.equal(GZIP)
       expect(detEncoding(gzipDeflateBr)).to.equal(BROTLI)
